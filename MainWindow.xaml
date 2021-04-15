@@ -1,0 +1,44 @@
+﻿<Window x:Class="ProjectL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectL"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        mc:Ignorable="d" Height="500" Width="900" ShowInTaskbar="False" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None">
+
+    <Grid Background="#FFEEE4E4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="345*" />
+            <RowDefinition Height="76*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Background="#FF671A71" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
+
+        <StackPanel Grid.Row="1" Width="400" Height="200" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#FFEEE4E4" Grid.ColumnSpan="3" >
+                <StackPanel Height="80" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Text="ДОБРО ПОЖАЛОВАТЬ" FontSize="35" FontFamily="Century Gothic" Foreground="Gray" FontWeight="Bold" VerticalAlignment="Center"/>
+                </StackPanel>
+            <Button VerticalAlignment="Top" Height="50" Width="200" Background="#FF962DA8" Margin="5" Click="Go">
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock FontSize="30" FontFamily="Century Gothic" VerticalAlignment="Center" Text="НАЧАТЬ"/>
+                    <materialDesign:PackIcon FontSize="30" FontFamily="Century Gothic" Kind="ArrowRight" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button VerticalAlignment="Top" Height="50" Width="200" Click="buttonExit" Margin="5">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="30" FontFamily="Century Gothic" VerticalAlignment="Center" Text="ВЫХОД"/>
+                    <materialDesign:PackIcon FontSize="30" FontFamily="Century Gothic" Kind="ExitRun" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+
+</Window>

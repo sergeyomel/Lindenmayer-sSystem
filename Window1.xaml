@@ -1,0 +1,135 @@
+﻿<Window x:Class="ProjectL.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectL"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        mc:Ignorable="d" Height="600" Width="1280" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Background="#FF671A71" Margin="0.2,0,0,550" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Левая часть header - а-->
+            <StackPanel Orientation="Horizontal" Height="Auto" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left">
+                <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Margin="5" Click="GoStartPage">
+                    <materialDesign:PackIcon Kind="ReorderHorizontal" Height="35" Width="30"/>
+                </Button>
+                <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Margin="5">
+                    <materialDesign:PackIcon Kind="Help" Height="35" Width="30"/>
+                </Button>
+            </StackPanel>
+
+            <!--Правая часть header-->
+            <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Margin="5" Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Click="ExitApplication">
+                    <materialDesign:PackIcon Kind="ExitRun" Height="35" Width="30"/>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+
+        <!--Левая панель-->
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Background="#FF2A092E">
+
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1" Background="#FFD3CACA">
+            <ScrollViewer x:Name="ScrollBarFunction" VerticalAlignment="Top" Height="450" VerticalScrollBarVisibility="Visible"  Margin="5,5">
+                <StackPanel Orientation="Vertical" >
+                    <Button HorizontalAlignment="Center" Margin="10" Width="280" Height="70">
+                        <StackPanel Width="250" Height="50" Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="30" FontFamily="Centuty Gothic" Text="HELLO"/>
+                            <materialDesign:PackIcon VerticalAlignment="Center" Margin="120,5" Kind="Beach" Height="35"  Width="35"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Center" Margin="10" Width="280" Height="70">
+                        <StackPanel Width="250" Height="50" Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="30" FontFamily="Centuty Gothic" Text="HELLO"/>
+                            <materialDesign:PackIcon VerticalAlignment="Center" Margin="120,5" Kind="Beach" Height="35"  Width="35"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Center" Margin="10" Width="280" Height="70">
+                        <StackPanel Width="250" Height="50" Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="30" FontFamily="Centuty Gothic" Text="HELLO"/>
+                            <materialDesign:PackIcon VerticalAlignment="Center" Margin="120,5" Kind="Beach" Height="35"  Width="35"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Center" Margin="10" Width="280" Height="70">
+                        <StackPanel Width="250" Height="50" Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="30" FontFamily="Centuty Gothic" Text="HELLO"/>
+                            <materialDesign:PackIcon VerticalAlignment="Center" Margin="120,5" Kind="Beach" Height="35"  Width="35"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Center" Margin="10" Width="280" Height="70">
+                        <StackPanel Width="250" Height="50" Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="30" FontFamily="Centuty Gothic" Text="HELLO"/>
+                            <materialDesign:PackIcon VerticalAlignment="Center" Margin="120,5" Kind="Beach" Height="35"  Width="35"/>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Center" Margin="10" Width="280" Height="70">
+                        <StackPanel Width="250" Height="50" Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="30" FontFamily="Centuty Gothic" Text="HELLO"/>
+                            <materialDesign:PackIcon VerticalAlignment="Center" Margin="120,5" Kind="Beach" Height="35"  Width="35"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </ScrollViewer>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                <Button Width="130" Height="50" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Background="#FF4F316B" BorderBrush="#FF4F316B" Click="ScrollBarUp">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="103" Height="40">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="25" Text="ВВЕРХ"/>
+                        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowUp" Width="30" Height="30"/>
+                    </StackPanel>
+                </Button>
+                <Button Width="130" Height="50" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="20,10" Background="#FF4F316B" BorderBrush="#FF4F316B" Click="ScrollBarDown">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="105" Height="40">
+                        <TextBlock Margin="3" VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Century Gothic" FontSize="25" Text="ВНИЗ"/>
+                        <materialDesign:PackIcon VerticalAlignment="Center" Kind="ArrowDown" Width="30" Height="30"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <!--Canvas-->
+        <Border Grid.Column="2" Grid.Row="1" BorderBrush="Gray" BorderThickness="3">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Canvas Grid.Column="0" Grid.Row="0" Background="#FFF4E5E5">
+
+                </Canvas>
+                <Border Grid.Column="0" Grid.Row="1" BorderBrush="Gray" BorderThickness="3" Background="#FFAD9F9F">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="0" Grid.Row="1" Background="#FFAD9F9F">
+                        <TextBlock FontSize="20" FontFamily="Century Gothic" VerticalAlignment="Center" Text="HELLO"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Border>
+
+    </Grid>
+
+</Window>
